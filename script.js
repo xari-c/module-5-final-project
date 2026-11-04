@@ -1,25 +1,4 @@
 // API: https://www.omdbapi.com/?apikey=5ebfc59b&s=marvel
-// let movies;
-
-// async function renderMovies() {
-//   const moviesWrapper = document.querySelector(".movies");
-//   moviesWrapper.classList += ' movies__loading';
-
-//   if (!movies) {
-//     movies = await getMovies();
-//   }
-
-//   console.log(movies)
-
-//   moviesWrapper.classList.remove ('movies__loading');
-  
-//   const moviesHTML = movies.map (movie => {
-//     [REUSED]
-// }
-
-// function filterMovies(event) {
-//   renderMovies(event.target.value);
-// }
 
 const API_KEY = '5ebfc59b';
 const searchForm = document.querySelector('#searchForm');
@@ -108,8 +87,6 @@ function displayMovies(movies) {
     } else if (sortType === 'oldest') {
       sortedMovies.sort((a, b) => Number(a.Year) - Number(b.Year))
     }
-
-
 
     displayMovies(sortedMovies);
   }
