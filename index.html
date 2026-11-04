@@ -47,10 +47,10 @@
 
     <main>
       <div class="controls">
-        <p id="resultsInfo" class="resultsInfo"><span>Showing: </span>Marvel</p>
+        <p id="resultsInfo" class="resultsInfo"><span>Showing: </span>${searchDefault}</p>
         <div>
           <label for="sortSelect">Sort:</label>
-          <select id="sortSelect" onchange=(filterMovies(event))>
+          <select id="sortSelect">
             <option value="default">Default</option>
             <option value="a-z">A - Z</option>
             <option value="z-a">Z - A</option>
